@@ -27,7 +27,7 @@
       </div>
       <div id="info2" class="info"><strong class="GIT1">GIT STATUS </strong>Com ele podemos verificar quais arquivos ainda não adicionamos no repositório local da máquina. Normalmente são marcados em vermelho ao serem exibidos no seu terminal, para seguirmos corretamente temos que adicionar esses arquivos ao repositório local, então vamos precisar desse comando aqui: <strong>GIT ADD</strong>
        </div>
-      <div id="info3" class="info"> <strong class="GIT1">GIT ADD</strong> Esse comando fará com que todos os arquivos fiquem prontos para o Github, por isso ele é indipensável. É imporante observar que ao usar GIT ADD todos os arquivos iram ser adicionados, mas caso queiramos adicionar apenas algum arquivo especifico, basta usar <strong class="GIT1">GIT ADD nome_do_arquivo.js</strong> No fim desse processo, ao digitarmos novamente o <strong>GIT STATUS</strong> para termos certeza de que os arquivos que queremos foram adicionados
+      <div id="info3" class="info"> <strong class="GIT1">GIT ADD</strong> Esse comando fará com que todos os arquivos fiquem prontos para o Github, por isso ele é indipensável. É imporante observar que ao usar GIT ADD . todos os arquivos iram ser adicionados, mas caso queiramos adicionar apenas algum arquivo especifico, basta usar <strong class="GIT1">GIT ADD nome_do_arquivo.js</strong> No fim desse processo, ao digitarmos novamente o <strong>GIT STATUS</strong> para termos certeza de que os arquivos que queremos foram adicionados
       </div>
       <div id="info4" class="info">
         <strong class="GUIT1">GIT COMMIT</strong> Agora Faremos o primeiro <b>Commit</b> do projeto. Basta utilizar o seguinte comando: <strong>GIT COMMIT -M "Meu primeiro commit"</strong> A flag <b>-m</b> indica que vamos adicionar uma mensagem para aquele commit. Isso é muito impotante, pois dessa forma conseguiremos indentificar o que foi feito naquele commit. Por exemplo, você acabou de adicionar um Header na aplicação, então na mensagem você sinaliza que criou o header para a aplicação. 
@@ -37,7 +37,7 @@
       <div id="info6" class="info">
 <strong class="GIT1">GIT REMOTE ADD ORIGIN link_do_repositorio</strong> O link fica disponivel na pagina apos criarmos o repositorio no github. <br>Por fim,Vamos enviar esse projeto com o proximo comando.
       </div>
-      <div id="info7" class="info">Por fim, para enviar esse projeto pro repositorio do Github, executamos o seguinte comando: <strong class="GIT1">GIT PUSH -U ORIGIN MAIN</strong> perceba que temos <b>main</b> aki nos especificamos em qual BRANCH faremos o PUSH ''envio'' do nosso projeto pro repositorio do GITHUB 
+      <div id="info7" class="info">Por fim, para enviar esse projeto pro repositorio do Github, executamos o seguinte comando: <strong class="GIT1">GIT PUSH -U ORIGIN MAIN</strong> perceba que temos <b>main</b> aki nos especificamos em qual BRANCH faremos o PUSH ''envio'' do nosso projeto pro repositorio do GITHUB, caso apresente algum erro, talvez esquecemos de integrar as alterações do repositório remoto com o seu repositório local antes de fazer o push das suas próprias alterações. Podemos fazer isso executando o comando <strong class="GIT1">GIT PUSH</strong> Isso irá buscar as alterações mais recentes do repositório remoto e tentar mesclá-las com as suas alterações locais. 
      
       </div>
 
