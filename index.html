@@ -13,40 +13,37 @@
     <div>
       <!-- BOTÕES-->
       <button onclick="mostrarInformacao(1)">GIT INIT</button>
-      <button onclick="mostrarInformacao(2)">GIT CLONE</button>
-      <button onclick="mostrarInformacao(3)">GIT COMMIT</button>
-      <button onclick="mostrarInformacao(4)">Botão 4</button>
-      <button onclick="mostrarInformacao(5)">Botão 5</button>
-      <button onclick="mostrarInformacao(6)">Botão 6</button>
-      <button onclick="mostrarInformacao(7)">Botão 7</button>
-      <button onclick="mostrarInformacao(8)">Botão 8</button>
+      <button onclick="mostrarInformacao(2)">GIT STATUS</button>
+      <button onclick="mostrarInformacao(3)">GIT ADD</button>
+      <button onclick="mostrarInformacao(4)">GIT COMMIT</button>
+      <button onclick="mostrarInformacao(5)">GIT BRANCH</button>
+      <button onclick="mostrarInformacao(6)">GIT REMOTE ADD</button>
+      <button onclick="mostrarInformacao(7)">GIT PUSH</button>
+      
+      <!--button onclick="mostrarInformacao(8)">Botão 8</!--button>
       <!-- INFORMAÇÃO CORRESPONDE A CADA BOTÃO-->
       <div id="info1" class="info">
-        O comando <strong CLASS="GIT1">GIT INIT</strong>  cria um novo repositório do Git. Ele pode ser usado para converter um projeto existente e não versionado em um repositório do Git ou inicializar um novo repositório vazio. A maioria dos outros comandos Git não está disponível fora de um repositório inicializado, portanto, este costuma ser o primeiro comando que você executa em um novo projeto.
+        O comando <strong CLASS="GIT1">GIT INIT</strong>  cria um novo repositório do Git. Ele pode ser usado para converter um projeto existente e não versionado em um repositório do Git ou inicializar um novo repositório vazio. A maioria dos outros comandos Git não está disponível fora de um repositório inicializado, portanto, este costuma ser o primeiro comando que você executa em um novo projeto. GIT INIT Criará alguns arquivos próprios do git, entre eles o mais importante é o gitignore, pois nele está tudo o que se deve ignorar ao realizar o commit. É aqui onde vamos colocar diretórios e arquivos grandes, que podemos gerar facilmente, ou arquivos que não queremos que fiquem visíveis no repositório.
       </div>
-      <div id="info2" class="info">
-        Aqui, vamos examinar o comando <strong class="GIT1">GIT ADD</strong> 
-      </div>
-      <div id="info3" class="info">
-        <strong class="GUIT1">GIT COMMIT</strong>com o git commit podemos 
+      <div id="info2" class="info"><strong class="GIT1">GIT STATUS </strong>Com ele podemos verificar quais arquivos ainda não adicionamos no repositório local da máquina. Normalmente são marcados em vermelho ao serem exibidos no seu terminal, para seguirmos corretamente temos que adicionar esses arquivos ao repositório local, então vamos precisar desse comando aqui: <strong>GIT ADD</strong>
+       </div>
+      <div id="info3" class="info"> <strong class="GIT1">GIT ADD</strong> Esse comando fará com que todos os arquivos fiquem prontos para o Github, por isso ele é indipensável. É imporante observar que ao usar GIT ADD todos os arquivos iram ser adicionados, mas caso queiramos adicionar apenas algum arquivo especifico, basta usar <strong class="GIT1">GIT ADD nome_do_arquivo.js</strong> No fim desse processo, ao digitarmos novamente o <strong>GIT STATUS</strong> para termos certeza de que os arquivos que queremos foram adicionados
       </div>
       <div id="info4" class="info">
-        Informação do Botão 4
+        <strong class="GUIT1">GIT COMMIT</strong> Agora Faremos o primeiro <b>Commit</b> do projeto. Basta utilizar o seguinte comando: <strong>GIT COMMIT -M "Meu primeiro commit"</strong> A flag <b>-m</b> indica que vamos adicionar uma mensagem para aquele commit. Isso é muito impotante, pois dessa forma conseguiremos indentificar o que foi feito naquele commit. Por exemplo, você acabou de adicionar um Header na aplicação, então na mensagem você sinaliza que criou o header para a aplicação. 
       </div> 
-      <div id="info5" class="info">
-5 
+      <div id="info5" class="info">Aqui vamos criar a <b>Branch main</b>, que é a principal branch do repositório. ao utilizar o comando <strong class="GIT1">GIT BRANCH -M MAIN</strong> Agora vamos linkar ambos os repositorios, tanto o repositio da nossa maquina quanto o do GITHUB
       </div>
       <div id="info6" class="info">
-6
+<strong class="GIT1">GIT REMOTE ADD ORIGIN link_do_repositorio</strong> O link fica disponivel na pagina apos criarmos o repositorio no github. <br>Por fim,Vamos enviar esse projeto com o proximo comando.
       </div>
-      <div id="info7" class="info">
- 7       
+      <div id="info7" class="info">Por fim, para enviar esse projeto pro repositorio do Github, executamos o seguinte comando: <strong class="GIT1">GIT PUSH -U ORIGIN MAIN</strong> perceba que temos <b>main</b> aki nos especificamos em qual BRANCH faremos o PUSH ''envio'' do nosso projeto pro repositorio do GITHUB 
+     
       </div>
-      <div id="info8" class="info">
-8
-      </div>
-    </div>
 
+    </div>
+    
+    
 </div></div>
 
 
