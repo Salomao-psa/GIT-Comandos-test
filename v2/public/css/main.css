@@ -1,6 +1,7 @@
 .a2{
     background-color: rgba(186, 20, 20, 0.247);
-border: 1px solid transparent;
+border: 1px solid rgba(255, 0, 0, 0.348);
+
 }
 .a2 p{
     font-family: monospace;
@@ -27,3 +28,20 @@ hr{
     border-left:1px solid red;
     border-right: 1px solid red;
 }
+
+
+.sidebar {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgba(234, 54, 120, 0.404);
+    border-bottom: 2px solid red;
+  }
+
+  .element a {
+  text-decoration: none;
+  color:rgb(161, 21, 21);
+
+
+}
+
+
