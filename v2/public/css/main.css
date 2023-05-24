@@ -1,0 +1,29 @@
+.a2{
+    background-color: rgba(186, 20, 20, 0.247);
+border: 1px solid transparent;
+}
+.a2 p{
+    font-family: monospace;
+    color: rgb(161, 21, 21);
+   font-weight: lighter;
+}
+.m1{
+    border: solid 2px rgb(161, 21, 21) ;
+    border-radius: 15px;
+    background-color: rgb(56, 4, 4);
+    color:navajowhite !important;
+}
+
+h1{
+    color:rgb(107, 29, 29);
+    font-weight: 800;
+
+    
+}
+hr{
+    color:red
+}
+.border-p{
+    border-left:1px solid red;
+    border-right: 1px solid red;
+}
