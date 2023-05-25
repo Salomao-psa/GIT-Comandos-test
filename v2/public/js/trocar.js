@@ -1,12 +1,12 @@
-function trocarConteudo(identificador) {
-    // Oculta todos os elementos com a classe 'content'
-    var elementos = document.getElementsByClassName('content');
-    for (var i = 0; i < elementos.length; i++) {
-      elementos[i].style.display = 'none';
-    }
-    
-    // Exibe o elemento com o identificador correspondente
-    var elemento = document.getElementById(identificador);
-    elemento.style.display = 'block';
+function exibirTexto(textoId) {
+  // Obter todos os elementos de texto dentro do elemento com id "conteudo"
+  var textos = document.getElementById('conteudo').children;
+  
+  // Esconder todos os textos
+  for (var i = 0; i < textos.length; i++) {
+    textos[i].style.display = 'none';
   }
   
+  // Exibir o texto selecionado
+  document.getElementById(textoId).style.display = 'block';
+}

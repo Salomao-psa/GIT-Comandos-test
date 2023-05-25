@@ -1,18 +1,23 @@
 
-<div class="sidebar">
-  <div class="element"><a href="#">INIT</a></div>
-  <div class="element"><a href="#">STATUS</a></div>
-  <div class="element"><a href="#">ADD</a></div>
-  <div class="element"><a href="#">REMOTE </a></div>
-  <div class="element"><a href="#">PUSH</a></div>
-  <div class="element"><a href="#">PULL</a></div>
+<div class="sidebar col-12">
+  <div id="botoes">
+    <button onclick="exibirTexto('texto1')"class="bi bi-boxes"> GIT INIT</button>
+    <button onclick="exibirTexto('texto2')"class="bi bi-boxes"> GIT STATUS</button>
+    <button onclick="exibirTexto('texto3')"class="bi bi-boxes"> GIT ADD</button>
+    <button onclick="exibirTexto('texto4')"class="bi bi-boxes"> GIT COMMIT</button>
+    <button onclick="exibirTexto('texto5')"class="bi bi-boxes"> GIT BRANCH</button>
+    <button onclick="exibirTexto('texto6')"class="bi bi-boxes"> GIT REMOTE ADD</button>
+    <button onclick="exibirTexto('texto7')"class="bi bi-boxes"> GIT PUSH</button>
+  </div>
 
 </div>
   <div class="container a2 pt-1">
     <div class="container text-center">
         <div class="row">
-            <div class="col-12 col-lg-6 border-p"> <h1>GIT INIT</h1><hr class="hr"> <p> O comando <v class="v">git init</v> é usado para iniciar um repositório Git em um diretório ou pasta específica. Quando você executa o <v class="v">git init</v>, ele cria um novo repositório Git vazio no diretório atual ou no diretório especificado. <br><br>
-
+          <div id="conteudo">
+            <div  class="col-12 col-lg-6 border-p"  id="texto1" style="display: none;">
+              <h1>GIT INIT</h1><hr class="hr"> <p> O comando <v class="v">git init</v> é usado para iniciar um repositório Git em um diretório ou pasta específica. Quando você executa o <v class="v">git init</v>, ele cria um novo repositório Git vazio no diretório atual ou no diretório especificado. <br><br>
+  
                 Quando um repositório Git é iniciado usando o comando <v class="v">git init</v>, ele cria uma estrutura oculta chamada de diretório ".git". Essa estrutura contém todos os arquivos e metadados necessários para o funcionamento do Git e para controlar as versões do seu projeto. <br><br>
                 
                 Ao executar o <v class="v">git init</v>, o Git começa a rastrear as alterações nos arquivos do diretório especificado. Você pode adicionar arquivos ao repositório usando o comando <v class="v">git add</v> e fazer uma confirmação <b class="b">(commit)</b> dessas alterações usando o comando <v class="v">git init</v>. Isso permite que você registre as versões dos arquivos e mantenha um histórico completo de todas as alterações feitas ao longo do tempo. <br><br>
@@ -20,14 +25,49 @@
                 O <v class="v">git init</v> deve ser executado apenas uma vez por diretório para iniciar o repositório. Após a inicialização, você pode usar outros comandos do Git para trabalhar com o repositório, como criar ramificações <b class="b">(branches)</b>, mesclar alterações, rastrear problemas <b class="b">(issues)</b> e colaborar com outros desenvolvedores. <br><br>
                 
                 É importante notar que o <v class="v">git init</v> inicia apenas um repositório local. Para trabalhar com repositórios remotos, como o GitHub, você precisará adicionar um repositório remoto ao seu repositório local usando o comando <b class="b">git remote add</b> para estabelecer a conexão e permitir a sincronização das alterações com o repositório remoto.</p> <hr class="hr"> 
+
+
+
+            </div>
+            <div class="col-12 col-lg-6 border-p"  id="texto2" style="display: none;"> <h1>GIT STATUS</h1><p>Com ele podemos verificar quais arquivos ainda não adicionamos no repositório local da máquina. Normalmente são marcados em vermelho ao serem exibidos no seu terminal, para seguirmos corretamente temos que adicionar esses arquivos ao repositório local, então vamos precisar desse comando aqui: <strong>GIT ADD</strong> <br> <br> 
+              git status: Mostra o estado atual do repositório, indicando arquivos modificados, adicionados ou removidos. <br> <br>
+
+              Exemplo: git status</p> </div>
+            <div class="col-12 col-lg-6 border-p"  id="texto3" style="display: none;"><h1>GIT ADD</h1><p> Esse comando fará com que todos os arquivos fiquem prontos para o Github, por isso ele é indipensável. É imporante observar que ao usar GIT ADD . todos os arquivos iram ser adicionados, mas caso queiramos adicionar apenas algum arquivo especifico, basta usar <strong class="GIT1">GIT ADD nome_do_arquivo.js</strong> No fim desse processo, ao digitarmos novamente o <strong>GIT STATUS</strong> para termos certeza de que os arquivos que queremos foram adicionados
+            <br><br> git add [arquivo]: Adiciona um arquivo específico ou alterações de um arquivo ao índice (staging area) para serem commitadas posteriormente.
+<br><br>
+            Exemplo: <br>
+            git add arquivo.txt (adiciona um arquivo específico) <br>
+            git add pasta/ (adiciona todos os arquivos na pasta)  <br>
+             git add . (adiciona todas as alterações no diretório atual)
+          
+          </p></div>
+            <div class="col-12 col-lg-6 border-p"  id="texto4" style="display: none;"><h1>GIT COMMIT</h1><p> utilizando o seguinte comando: <strong>GIT COMMIT -M "Meu primeiro commit"</strong> A flag <b>-m</b> indica que vamos adicionar uma mensagem para aquele commit. Isso é muito impotante, pois dessa forma conseguiremos indentificar o que foi feito naquele commit. Por exemplo, você acabou de adicionar um Header na aplicação, então na mensagem você sinaliza que criou o header para a aplicação. <br><br>
+              git commit -m "[mensagem]": Cria um novo commit com os arquivos adicionados ao índice e uma mensagem de commit. <br> <br>
+
+              Exemplo: git commit -m "Adiciona arquivo.txt" </p>  </div>
+            <div class="col-12 col-lg-6 border-p"  id="texto5" style="display: none;"><h1>GIT BRANCH</h1><p>Aqui vamos criar a <b>Branch main</b>, que é a principal branch do repositório. ao utilizar o comando <strong>GIT BRANCH -M MAIN</strong> Agora vamos linkar ambos os repositorios, tanto o repositio da nossa maquina quanto o do GITHUB <br>
+              git branch: Lista as branches existentes no repositório e destaca a branch atual. <br> <br>
+
+               Exemplo: <br>
+                git branch (lista as branches) <br>
+                  git branch nome-branch (cria uma nova branch com o nome "nome-branch") </p><br>
+
+                  <h1>git checkout [branch]:</h1><p>Muda para a branch especificada. Exemplo: git checkout nome-branch</p>
+                  <h1>git merge [branch]:</h1> <br><p>Incorpora as alterações da branch especificada na branch atual. <br>
+
+                    Exemplo: git merge outra-branch</p>
+            
+            </p> </div>
+            <div class="col-12 col-lg-6 border-p"  id="texto6" style="display: none;"><h1>GIT REMOTE ADD ORIGIN</h1> <p> link_do_repositorio</strong> O link fica disponivel na pagina apos criarmos o repositorio no github. <br>Por fim,Vamos enviar esse projeto com o proximo comando.</p></div>
+            <div class="col-12 col-lg-6 border-p"  id="texto7" style="display: none;"><h1>Git PUSH</h1> <p> Por fim, para enviar esse projeto pro repositorio do Github, executamos o seguinte comando: <strong class="GIT1">GIT PUSH -U ORIGIN MAIN</strong> perceba que temos <b>main</b> aki nos especificamos em qual BRANCH faremos o PUSH ''envio'' do nosso projeto pro repositorio do GITHUB, caso apresente algum erro, talvez esquecemos de integrar as alterações do repositório remoto com o seu repositório local antes de fazer o push das suas próprias alterações. Podemos fazer isso executando o comando <strong class="GIT1">GIT PUSH</strong> Isso irá buscar as alterações mais recentes do repositório remoto e tentar mesclá-las com as suas alterações locais. <br><br>git push: Envia os commits locais para o repositório remoto. <br> <br>
+
+              Exemplo: git push origin master <br> perceba que aki master e o nome da branch. <br>
+            podemos declarar uma nova branch ao declarar um nome que não foi utilizado</p> </div>
+
+
                  </div>
-                 <div class="col-12 col-lg-6 "> 
-                    <h1>No terminal</h1>
-                    <img src="/images/gitpasta.png" class="img-fluid" alt="Responsive image">
-                    <p>Ao executarmos o comando Git init, a pasta .git sera criada no nosso diretorio</p> <hr class="hr">
-                 
-                    
-                 </div>
+               
 
          </div>
         </div>

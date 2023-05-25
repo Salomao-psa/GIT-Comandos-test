@@ -44,4 +44,14 @@ hr{
 
 }
 
+.sidebar button{
+   border-radius:20px;
+border:2px ;
+box-shadow: 1px 2px 3px 0px rgb(0, 0, 0);
+font-size:medium;
+color: papayawhip;
+background-color: rgb(229, 0, 42);
+
+
+}
 
