@@ -10,3 +10,4 @@ function exibirTexto(textoId) {
   // Exibir o texto selecionado
   document.getElementById(textoId).style.display = 'block';
 }
+
